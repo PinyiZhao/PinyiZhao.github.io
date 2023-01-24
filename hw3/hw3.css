@@ -1,0 +1,84 @@
+.scope {
+    width: 760px;
+    height: 1028px;
+    /*
+    background-color: paleturquoise;
+    */
+    margin: 0 auto;
+
+    padding-top: 33px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 0;
+}
+.square {
+    margin-left: 52px;
+    width: 663px;
+    height: 128px;
+    border: 2px solid black;
+}
+
+/*.center {*/
+/*    text-align: center;*/
+/*}*/
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 56px;
+    font-weight: 545;
+    margin-top: 22px;
+    margin-bottom: 12px;
+    line-height: 1;
+
+}
+
+
+div {
+    margin-top: 0;
+    font-size: 13px;
+    text-align: center;
+}
+
+.clickedColor {
+    color: black;
+    text-decoration-line: none;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
+}
+
+.color {
+    color: #888888;
+    text-decoration-line: none;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.tableOne {
+    margin: 0 auto;
+    border-collapse:separate;
+    border-spacing:6px 1px;
+    margin-top: 90px;
+}
+.tableTwo {
+    margin: 22px 318px;
+    border-spacing: 16px 1px;
+}
+.picture {
+    width: 374px;
+    height: 374px;
+    object-fit: cover;
+}
+
+
+p {
+    margin-left: 9px;
+    font-style: italic;
+    margin-top: 30px;
+    font-size: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+}
