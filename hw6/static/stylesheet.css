@@ -1,0 +1,286 @@
+body {
+  background: url('https://gqeggqesix.wl.r.appspot.com/static/background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+h1 {
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: lighter;
+  font-size: 40px;
+}
+label {
+  color: aqua;
+}
+
+.star {
+  color: red;
+}
+
+.container {
+  width: 700px;
+  height: auto;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  border-radius: 1.5rem;
+  background: rgb(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+.box1 {
+  padding-top: 5px;
+  padding-bottom: 15px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container2 {
+  width: 1600px;
+  margin: 50px auto;
+}
+
+.container3 {
+  width: 1000px;
+  height: auto;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  background: rgb(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-radius: 1.5rem;
+}
+
+.container4 {
+  width: 1000px;
+  height: auto;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  background: white;
+  border-radius: 1.5rem;
+  padding: 20px;
+}
+
+.input {
+  height: 35px;
+  width: 100%;
+  border-radius: 7px;
+  background-color: rgb(255, 255, 255, 0);
+}
+#buttonBox {
+  margin: 20px 0;
+  padding-bottom: 30px;
+}
+.button {
+  margin-top: 20px;
+  font-size: large;
+  width: 120px;
+  height: 55px;
+  border-radius: 10px;
+}
+.clearButton {
+  border: 0;
+  color: white;
+  background-color: rgb(79, 111, 169);
+  border-bottom: rgb(57 74 113) 5px solid;
+}
+
+.searchButton {
+  border: 0;
+  color: white;
+  background-color: rgb(230, 123, 23);
+  border-bottom: rgb(227, 82, 50) 5px solid;
+}
+
+.searchButton:hover {
+  background-color: #ff9933;
+}
+
+.clearButton:hover {
+  background-color: rgb(105, 135, 193);
+}
+
+#infoRecord {
+  color: red;
+  background-color: whitesmoke;
+  text-align: center;
+  font-weight: bold;
+  /* vertical */
+  line-height: 50px;
+  margin: 50px auto;
+  width: 900px;
+  height: 50px;
+}
+
+.detailName {
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+#textBox {
+  margin-left: 2%;
+  margin-bottom: 20px;
+  float: left;
+  width: 35%;
+}
+
+#pictureBox {
+  margin-left: 45%;
+  width: 500px;
+
+  object-fit: cover;
+}
+
+.blueText {
+  color: rgba(0, 255, 255, 0.862);
+  font-size: larger;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.noDisplay {
+  display: none;
+}
+
+.imageContent {
+  width: 120px;
+  height: 60px;
+  object-fit: cover;
+}
+
+th {
+  background-color: whitesmoke;
+}
+
+td {
+  height: 87px;
+  font-size: 18px;
+  text-align: center;
+  background-color: white;
+}
+
+/* content style setting */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: darkslateblue !important;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.status {
+  font-size: medium;
+  color: white;
+
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.hyperlink:link {
+  color: deepskyblue;
+  text-decoration: none;
+}
+.hyperlink:hover {
+  color: darkslateblue !important;
+  text-decoration: none;
+}
+.hyperlink:visited {
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+.detailColor {
+  color: white;
+  margin: 0;
+}
+
+.diva {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  border: 1px solid white;
+  border-top: 0;
+  border-left: 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.arrow:hover {
+  cursor: pointer;
+  border: 2px solid whitesmoke;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  border-top: 0;
+  border-left: 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+#border {
+  border-radius: 1.5rem;
+  border: 1px solid black;
+}
+
+.venueName {
+  color: black;
+  font-family: system-ui;
+  font-weight: 400;
+}
+
+#underline {
+  font-family: system-ui;
+  font-size: 40px;
+  border-bottom: 2px solid black;
+}
+
+#address {
+  width: 50%;
+  float: left;
+  margin-bottom: 20px;
+  border-right: solid 1px black;
+  color: black;
+}
+
+.address {
+  margin: 0;
+  color: black;
+}
+
+.sort:hover {
+  cursor: pointer;
+}
+
+#addrblock {
+  margin-left: 35%;
+  text-align: left;
+}
+
+#headerblock {
+  width: 35%;
+  float: left;
+  text-align: right;
+}

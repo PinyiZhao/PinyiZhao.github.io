@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Search</title>
+    <link rel="stylesheet" href="https://gqeggqesix.wl.r.appspot.com/static/stylesheet.css">
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js" defer></script>
+    <script src="https://gqeggqesix.wl.r.appspot.com/static/script.js" defer></script>
+    
+</head>
+<body>
+  <div id="body">
+    <div class="container">
+      <div class="box1">
+          <h1>Event Search</h1>
+          <hr>
+      </div>
+      <form action="" name="fileForm">
+          <label>Keyword</label>
+          <span class="star">*</span>
+          <br>
+          <input type="text"  class="input" required>
+          <br>
+          <br>
+          
+          <div>
+            <div style="width: 30%; float: left">
+              <label for="Distance(miles)">Distance(miles)</label>
+              <input placeholder="10" type="number" id="distanceInput" class="input">
+            </div>
+            <div style="margin-left: 56%">
+              <label for="Category">Category</label>
+              <span class="star">*</span>
+              <br>
+              <select name="" 
+                required="required"
+                class="input"
+                id="categoryInput">
+                <option value="Default">Default</option>
+                <option value="Music">Music</option>
+                <option value="Sports">Sports</option>
+                <option value="Arts & Theatre">Arts & Theatre</option>
+                <option value="Film">Film</option>
+                <option value="Miscellaneous">Miscellaneous</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <label>Location</label>
+          <span class="star">*</span>
+          <input type="checkbox" id="checkbox" class="checkInput">Auto-Detect Location
+          <br>
+          <input type="text" class="input" id="locInput" required>
+          <div id="buttonBox">
+            <input type="button" class="button searchButton" value="SEARCH">
+            <input type="button" class="button clearButton" value="CLEAR">
+          </div>          
+      </form>
+    </div>
+
+    <!-- display record text -->
+    <div id="infoRecord" class="noDisplay">
+      <p>No Records found</p>
+    </div>
+    
+    <!-- display table content -->
+    <template id="singlePost">
+      <tr id="postContent">
+        <td class="date"></td>
+        <td class="icon"></td>
+        <td class="event"></td>
+        <td class="genre"></td>
+        <td class="venue"></td>
+      </tr>
+    </template>
+    <table id="head" class="container2 tableInitial noDisplay" border="0">
+      <thead style="height: 50px; font-size: 20px;" font-weight: bolder;>
+        <tr>
+          <th style="width: 222px;">Date</th>
+          <th style="width: 222px;">Icon</th>
+          <th class="sort" style="width: 606px;">Event</th>
+          <th class="sort" style="width: 150px;">Genre</th>
+          <th class="sort" style="width: 304px;">Venue</th>
+      </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    
+    <!-- tableDetail -->
+    <div id="tableDetail" class="container3 noDisplay">
+      <div class="box1">
+        <h1 class="detailName"></h1>
+      </div>
+      <div>
+        <div id="textBox">
+          <p class="blueText">Date</p>
+          <p class="detailDate detailColor"></p>
+          <div id="art">
+            <p class="blueText ">Artist/Team</p>
+            <p class="detailArtist detailColor"></p>
+          </div>
+          <p class="blueText">Venue</p>
+          <p class="detailVenue detailColor"></p>
+          <p class="blueText">Genres</p>
+          <p class="detailGenres detailColor"></p>
+          
+          <div id="price">
+            <p class="blueText">Price Ranges</p>
+            <p class="detailPrice detailColor"></p>
+          </div>
+          <p class="blueText">Ticket Status</p>
+          <p class="detailStatus detailColor"></p>
+          <p class="blueText">Buy Ticket At:</p>
+          <p class="detailLink detailColor"></p>      
+        </div>
+        <div id="pictureBox">
+          <span class="pic"></span>
+        </div>
+        <div style="clear:both"></div>
+      </div>
+    </div>
+
+    <!-- arrow -->
+    <div class="diva noDisplay">
+      <p style="font-size: larger; color: white;">Show Venue Details</p>
+      <div class="arrow"></div>
+    </div>
+    
+    <div class="venueInfo container4 noDisplay">
+      <div id="border">
+        <div class="box1">
+          <span id="underline"></span>
+        </div>
+        <div id="addPicture" style="text-align: center; margin-bottom: 10px;"></div>
+        <div style="margin-top: 30px;">
+          <div id="address" >
+            <div id="headerblock">
+              <p style="font-weight: bold; margin: 0;">Address:&nbsp&nbsp</p>
+            </div>
+            <div id="addrblock">
+              <p class="addr address"></p>
+              <p class="city address"></p>
+              <p class="code address"></p>
+            </div>
+              <p id="googleMap" style="text-align: center;"></p>
+          </div>
+          <div id="moreEvents" style="margin-left: 50%; text-align: center;"></div>
+          <div style="clear: both;"></div>
+        </div>
+      </div>
+        
+    </div>
+  </div>
+</body>
+</html>
+
